@@ -1,0 +1,268 @@
+main article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 70px 50px 50px;
+}
+@media (max-width: 700px) {
+  main article {
+    grid-template-columns: 1fr;
+    margin: 10px 10px 50px;
+  }
+
+  .card {
+    display: none;
+  }
+
+  .network {
+    display: none;
+  }
+  .main-image {
+    margin-bottom: 120px;
+  }
+}
+
+.main-after-call {
+  margin-top: 20px;
+}
+
+.main-btn {
+  font-family: "Mukta", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  height: 3rem;
+  width: 18rem;
+  background: linear-gradient(45deg, #3e03a0, #ee0979);
+  background-size: 200% 500%;
+  animation: card-animated 3s ease infinite;
+  display: block;
+  border-radius: 10px;
+  border: none;
+  margin: 50px 0;
+}
+
+.final {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-before-call {
+  color: #837597;
+}
+
+.main-tittle {
+  margin: 50px 0 0 0;
+  padding: 20px;
+  display: grid;
+}
+
+.main-call {
+  font-size: 4.5rem;
+  max-width: 13ch;
+}
+
+.main-image .cyber {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 6px;
+  border: 2px solid #3e1b50;
+  box-shadow: 0 0 20px 1px black;
+}
+
+.nft-icon {
+  position: absolute;
+  width: 5rem;
+  top: -5rem;
+  left: -5rem;
+  opacity: 0.35;
+}
+
+.main-image {
+  position: relative;
+  display: grid;
+  grid-template-rows: 27.3rem;
+  justify-content: center;
+  justify-items: center;
+}
+@keyframes background-animated {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.main-image::before {
+  content: "HOT 🔥";
+  font-weight: 600;
+  animation: background-animated 15s ease infinite;
+  background: linear-gradient(20deg, #1d2671, #ee0979);
+  position: absolute;
+  background-size: 200% 200%;
+  top: 2.1px;
+  left: 0.1px;
+  color: white;
+  width: 5rem;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  height: 3rem;
+  border-radius: 3px;
+  justify-self: start;
+}
+
+@keyframes card-animated {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.card-main {
+  background: linear-gradient(#8d3f84, #371b4b);
+  background-size: 150% 150%;
+  animation: card-animated 10s ease infinite;
+  width: 18rem;
+  animation-direction: alternate;
+  height: 19rem;
+  border-radius: 1rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.card-top {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.eth {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.price {
+  font-weight: 600;
+  color: #cbc8cc;
+}
+
+.card-tittle {
+  font-weight: 400;
+  color: #c8b8db;
+  font-size: 1rem;
+  margin: 1rem 0 0 0;
+}
+
+.card-timer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem 2rem;
+  justify-items: center;
+  font-weight: 600;
+}
+
+.card-hour {
+  font-size: 2rem;
+}
+
+.card-button {
+  font-family: "Mukta", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  bottom: -2rem;
+  height: 3rem;
+  width: 18rem;
+  background: linear-gradient(45deg, #3e03a0, #ee0979);
+  background-size: 200% 500%;
+  animation: card-animated 3s ease infinite;
+  display: block;
+  border-radius: 10px;
+  border: none;
+}
+
+.timer-top {
+  grid-column: 1/4;
+}
+
+.vumans {
+  background: linear-gradient(to right, #4d39a8, #7d308d, #c11e6a, #ec8124);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.artist {
+  margin-top: 3rem;
+  margin-left: 8px;
+}
+
+.network {
+  margin-top: 1.5rem;
+}
+
+.network ul {
+  position: relative;
+  display: flex;
+  gap: 0 2rem;
+}
+
+/* .network ul::after {
+  content: url(/project2/img/seta2.webp) ;
+  position: absolute;
+  top: -100px;
+  right: -90px;
+} */
+
+.network-li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 10px;
+  gap: 20px;
+  align-content: space-evenly;
+}
+
+.network-li p:not(.collum2) {
+  color: #cbc8cc;
+}
+
+.collum2 {
+  grid-column: 2;
+}
+
+.network-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* .card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20rem;
+  content: "";
+  background: black;
+  width: 18rem;
+  height: 18rem;
+  color: red;
+  position: absolute;
+  bottom: -5rem;
+  left: 150px;
+  border-radius: 1rem;
+  border: 1px solid red;
+}
+ */

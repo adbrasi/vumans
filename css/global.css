@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  border-collapse: collapse;
+}
+body {
+  font-family: "Mukta", sans-serif;
+  font-weight: bold;
+  background: linear-gradient(45deg, #030518, #642b73, #0e0b27);
+  background-size: 200% 200%;
+  height: 1500px;
+  animation: background-animated 10s ease infinite;
+}
+
+@keyframes background-animated {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+img {
+  display: block;
+}
+
