@@ -68,7 +68,15 @@ main article {
   border-radius: 6px;
   border: 2px solid #3e1b50;
   box-shadow: 0 0 20px 1px black;
+  transition: 1s;
 }
+
+.cyber:hover{
+  transition: 0.5s;
+  box-shadow: 0 0 40px 1px #030518;
+}
+
+
 
 .nft-icon {
   position: absolute;
